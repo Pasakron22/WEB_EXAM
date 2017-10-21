@@ -2,8 +2,17 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Header from './Pasakron.js'; 
 class App extends Component {
+  constructor() {
+    super();
+    this.age = "200"
+  }
+  getVal = () => {
+    return "Function getVal";
+  }
   render() {
+    const myname = "Pasakron";
     return (
       <div className="App">
         <header className="App-header">
@@ -11,9 +20,10 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          <Header />
         </p>
       </div>
+
     );
   }
 }
